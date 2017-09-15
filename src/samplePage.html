@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Component Container</title>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>-->
+</head>
+<body>
+    <!--Template used for local dev testing of AEM objects only-->
+    <!--<script id="template" type="text/x-handlebars-template">-->
+        <!--<div>-->
+            <!--This is a sample template with some sample data...<br/>-->
+            <!--{{ data }}-->
+        <!--</div>-->
+    <!--</script>-->
+
+    <div>This is a sample page, it can be pulled from AEM to mimic the page template related to the component being developed.</div>
+    <div id="root" data-aem-component="componentName" data-aem-id="uniqueId"></div>
+
+    <div id="navComponent"></div>
+    <div id="rightRailCTA"></div>
+
+    <script src="component/dist/bundle.js"></script>
+    <script src="dependencies/navComponent/dist.js"></script>
+    <script src="dependencies/rightRailCTA/dist.js"></script>
+</body>
+</html>
